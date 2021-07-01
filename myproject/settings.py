@@ -15,20 +15,20 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env_list = dict
+env_list = dict()
 
-local_env = open(os.path.join(BASE_DIR,'.env'))
+local_env= open(os.path.join(BASE_DIR,'.env'))
 
-while True:
+while  True:
     line = local_env.readline()
     if not line:
         break
 
     line = line.replace('\n','')
-    start =line.find('=')
+    start = line.find('=')
     key = line[:start]
     value = line[start+1:]
-    env_list[key] =value
+    env_list[key] = value
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
