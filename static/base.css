@@ -6,6 +6,7 @@
 
 .jeju_main_btn{
     margin-bottom: 2rem;
+    font-family: 'Jua', sans-serif;
 }
 
 .jeju_footer_logo{
@@ -14,5 +15,6 @@
 }
 
 .jeju_footer_btn{
- margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Jua', sans-serif;
 }
